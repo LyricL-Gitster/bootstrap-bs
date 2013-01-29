@@ -1,0 +1,51 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+
+		<div class="span2">
+			<table class="table table-bordered">
+				<tr>
+					<td>hello</td>
+					<td>world</td>
+				</tr>
+				<tr>
+					<td>goodbye</td>
+					<td>world</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="span5">
+			<form action="/echo" method="post">
+				<fieldset>
+					<legend>Name Form</legend>
+					<label>Name</label>
+					<i class="icon-star"></i>
+					<input type="text" id="name" name="echo[name]" placeholder="Type something…" />
+					<br/>
+					<span class="help-block">Enter your name here.</span>
+					<label class="checkbox">
+						<input type="checkbox" /> Check me out
+					</label>
+					<button type="submit" class="btn btn-primary">Submit Name</button>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="span5">
+			<form action="/echo" method="post">
+				<fieldset>
+					<legend>Age Form</legend>
+					<label>Age</label>
+				    <i class="icon-calendar"></i>
+					<input type="text" id="age" name="echo[age]" placeholder="Type something…" />
+					<br/>
+					<span class="help-block">Enter Age.</span>
+					<label class="checkbox">
+						<input type="checkbox" /> Check me out
+					</label>
+					<button type="submit" class="btn">Submit Age</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
