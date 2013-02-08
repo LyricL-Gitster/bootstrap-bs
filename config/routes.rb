@@ -3,6 +3,8 @@ BootstrapBs::Application.routes.draw do
   match '/bs', to: 'echo#new'
 
   match '/echo', to: 'echo#echo'
+
+  match '/news', :to => redirect('/news.html')
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

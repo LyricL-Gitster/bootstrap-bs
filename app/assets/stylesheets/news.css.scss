@@ -1,0 +1,15 @@
+@import "bootstrap";
+
+#sidebar {
+	background-color: hsl(120,100%, 50%);
+	color: $red;
+}
+
+.nav-tabs li a{
+	color: $red;
+}
+
+.media-object {
+	border-radius: 20px;
+	width: 175px;
+}
