@@ -1,0 +1,18 @@
+<div class="tab-pane <%= status %>" id="my_news">
+  <div class="media">
+    <%= image_tag "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiRLr-BfSX3CoYBC8Yx9Awqkd0vEU7dVT5um-VhalzdjDHuzc8Bg", :class => "pull-left media-object" %>
+    <div class="media-body">
+      <h4 class="media-heading">Best Phone Since Sliced Gingerbread</h4>
+      <abbr title="Samsung Galaxy Note II"><%= my_news.shift %></abbr> 
+      <%= my_news.join(' ') %>
+    </div>
+  </div>
+  <br/>
+  <span class="label label-important">Requirements</span>
+  <%= table_for @requirements, ['description','points'] %>
+  <br/>
+  <div>
+    <span class="label label-success">Notes</span>
+    <%= @notes.join(' ') %>
+  </div>
+</div>

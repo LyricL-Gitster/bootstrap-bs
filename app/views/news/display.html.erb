@@ -1,0 +1,19 @@
+<ul class="nav nav-tabs">
+  <li class="active">
+    <a href="#my_news" data-toggle="tab">My News</a>
+  </li>
+  <li><a href="#your_news" data-toggle="tab">Your News</a></li>
+  <li><a href="#we_all_snooze" data-toggle="tab">We All Snooze</a></li>
+  <li><a href="#about_news" data-toggle="tab">About News</a></li>
+</ul>
+
+<div class="tab-content">
+  <%= render 'my_news_tab', {status:'active', my_news:@my_news} %>
+  <%= render 'your_news_tab', {status:'', your_news:@your_news} %>
+  <%= render 'we_all_snooze_tab', {status:'', we_all_snooze:@we_all_snooze} %>
+  <%= render 'about_news_tab', {status:'', about_news:@about_news} %>
+</div>
+
+<% content_for :sidebar do %>
+  <%= render 'sidebar' %>
+<% end %>

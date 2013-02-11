@@ -1,10 +1,12 @@
 BootstrapBs::Application.routes.draw do
 
+  resources :requirements
+
   match '/bs', to: 'echo#new'
 
   match '/echo', to: 'echo#echo'
 
-  match '/news', :to => redirect('/news.html')
+  match '/news', :to => 'news#display'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
